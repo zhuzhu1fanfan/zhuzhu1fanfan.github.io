@@ -1,8 +1,13 @@
 # Basic
 title: Zhuzhu_wd
 subtitle: 一个不知名的私人博客
+<<<<<<< HEAD
 welcome_message: <a href="https://github.com/onevcat/vno-jekyll" target="_blank">下载这个主题</a>
 description: 每一个不曾闻鸡起舞的日子，都是对生命的辜负。
+=======
+welcome_message: <a href="https://github.com/onevcat/vno-jekyll" target="_blank">欢迎下载主题</a>
+description:  每一个不曾闻鸡起舞的日子，都是对生命的辜负。
+>>>>>>> 2a2b2dd5e6626ef099bb87ada493e74abcd53453
 creator: <a href="http://onev.cat">@onevcat</a>
 
 url: "http://vno.onevcat.com"
@@ -38,9 +43,13 @@ comment:
 # Social
 social:
     weibo: https://weibo.com/
+<<<<<<< HEAD
     github: https://zhuzhu1fanfan.github.io/
     twitter: onevcat
     gplus: 107108267983477358170
+=======
+    github: https://github.com/zhuzhu1fanfan/zhuzhu1fanfan.github.io
+>>>>>>> 2a2b2dd5e6626ef099bb87ada493e74abcd53453
     mail: 1499272362@qq.com
 
 # Google Analytics
