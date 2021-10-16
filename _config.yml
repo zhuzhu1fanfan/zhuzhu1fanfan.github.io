@@ -41,7 +41,15 @@ social:
     weibo: https://weibo.com/
     github: https://zhuzhu1fanfan.github.io/
     mail: 1499272362@qq.com
+# 本地搜索
+local_search:
+  enable: true
 
+search:
+    path: search.xml
+    field: post
+    format: html
+    limit: 10000
 # Google Analytics
 ga:
     # id: your_ga_id
