@@ -1,0 +1,25 @@
+{
+  "name": "vno-jekyll-master",
+  "version": "1.0.0",
+  "description": "[Vno Jekyll](https://github.com/onevcat/vno-jekyll) is a theme for [Jekyll](http://jekyllrb.com). It is a port of my Ghost theme [vno](https://github.com/onevcat/vno), which is originally developed from [Dale Anthony's Uno](https://github.com/daleanthony/uno).",
+  "main": "index.js",
+  "dependencies": {
+    "hexo-generator-search": "^2.4.3",
+    "hexo-generator-searchdb": "^1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhuzhu1fanfan/zhuzhu1fanfan.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhuzhu1fanfan/zhuzhu1fanfan.github.io/issues"
+  },
+  "homepage": "https://github.com/zhuzhu1fanfan/zhuzhu1fanfan.github.io#readme",
+  "keywords": []
+}
