@@ -4,9 +4,9 @@ subtitle: 一个不知名的私人博客
 welcome_message: <a href="https://github.com/onevcat/vno-jekyll" target="_blank">欢迎下载主题</a>
 description:  每一个不曾闻鸡起舞的日子，都是对生命的辜负。
 
-creator: <a href="http://onev.cat">@onevcat</a>
+creator: <a href="https://zhuzhu1fanfan.github.io">@Zhu_weidan</a>
 
-url: "http://vno.onevcat.com"
+url: "https://github.com/zhuzhu1fanfan/zhuzhu1fanfan.github.com"
 
 permalink: /:year/:month/:title/
 
@@ -23,7 +23,7 @@ blog_button:
 
 # Navigation buttons in the front page.
 nav:
-    - {title: Projects, description: My Projects, url: 'http://project.onevcat.com'}
+    - {title: Projects, description: My Projects, url: 'https://github.com/zhuzhu1fanfan'}
     # - {title: Another Button, description: A button, url: 'http://example.com'}
 
 # Pagination
@@ -39,7 +39,7 @@ comment:
 # Social
 social:
     weibo: https://weibo.com/
-    github: https://zhuzhu1fanfan.github.io/
+    github: https://github.com/zhuzhu1fanfan/zhuzhu1fanfan.github.io
     mail: 1499272362@qq.com
 # 本地搜索
 local_search:
