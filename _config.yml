@@ -1,30 +1,30 @@
 # Basic
 title: Zhuzhu_wd
-subtitle: 一个不知名的私人博客
-welcome_message: <a href="https://github.com/onevcat/vno-jekyll" target="_blank">欢迎下载主题</a>
-description:  每一个不曾闻鸡起舞的日子，都是对生命的辜负。
-
+subtitle: 生活、学习、技术和灵感记录
+welcome_message: 这里记录值得留下的日常、项目和想法。
+description: 每一个不曾闻鸡起舞的日子，都是对生命的辜负。
+author: Zhu_weidan
 creator: <a href="https://zhuzhu1fanfan.github.io">@Zhu_weidan</a>
 
-url: "https://github.com/zhuzhu1fanfan/zhuzhu1fanfan.github.com"
+url: "https://zhuzhu1fanfan.github.io"
+baseurl: ""
 
 permalink: /:year/:month/:title/
 
 # Format
 highlighter: rouge
 
-# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
-cover_color: red
+# Theme
+cover_color: clear
 
-# The blog button should not be removed.
 blog_button:
     title: Blog
-    description: Visit blog
+    description: Read the latest posts
 
 # Navigation buttons in the front page.
 nav:
-    - {title: Projects, description: My Projects, url: 'https://github.com/zhuzhu1fanfan'}
-    # - {title: Another Button, description: A button, url: 'http://example.com'}
+    - {title: GitHub, description: My Projects, url: 'https://github.com/zhuzhu1fanfan'}
+    - {title: Email, description: Contact me, url: 'mailto:1499272362@qq.com'}
 
 # Pagination
 plugins: [jekyll-paginate]
@@ -33,15 +33,16 @@ paginate_path: "page/:num/"
 
 # Comment
 comment:
-    disqus: vno-jekyll
-    # duoshuo: 
-    
+    disqus:
+    # duoshuo:
+
 # Social
 social:
-    weibo: https://weibo.com/
-    github: https://github.com/zhuzhu1fanfan/zhuzhu1fanfan.github.io
+    github: https://github.com/zhuzhu1fanfan
     mail: 1499272362@qq.com
-# 本地搜索
+    weibo: https://weibo.com/
+
+# Local search
 local_search:
   enable: true
 
@@ -50,6 +51,7 @@ search:
     field: post
     format: html
     limit: 10000
+
 # Google Analytics
 ga:
     # id: your_ga_id
