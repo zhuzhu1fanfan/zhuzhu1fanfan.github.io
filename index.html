@@ -2,19 +2,28 @@
 layout: default
 ---
 
-<div class="main-post-list hidden">
+<section id="blog" class="home-section">
+  <div class="section-heading">
+    <p class="eyebrow">Latest Notes</p>
+    <h2>最新文章</h2>
+    <p>把学习、项目和日常想法整理成可以慢慢回看的记录。</p>
+  </div>
 
-  <ol class="post-list">
+  <ol class="post-grid">
     {% for post in paginator.posts %}
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="{{ post.url }}" title="访问 {{ post.title }}">{{ post.title }}</a></h2>
-      <p class="excerpt">{{ post.content | strip_html | strip_newlines | truncate: 250 }}&hellip;</p>
-      <div class="post-list__meta"><time datetime="{{post.date | date: date_to_xmlschema}}" class="post-list__meta--date date">{{ post.date | date: "%F"}}</time> &#8226; <span class="post-list__meta--tags tags">{{ post.tags | join:' ' }}</span><a class="btn-border-small" href={{ post.url }}>继续阅读</a></div>
-      <hr class="post-list__divider" />
+    <li class="post-card">
+      <a class="post-card__link" href="{{ post.url | relative_url }}" title="访问 {{ post.title }}">
+        <span class="post-card__date">{{ post.date | date: "%Y.%m.%d" }}</span>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.content | strip_html | strip_newlines | truncate: 160 }}</p>
+        {% if post.tags.size > 0 %}
+        <span class="post-card__tags">{{ post.tags | join:' · ' }}</span>
+        {% endif %}
+        <span class="post-card__read">阅读全文</span>
+      </a>
     </li>
     {% endfor %}
   </ol>
 
   {% include pagination.html %}
-
-</div>
+</section>
