@@ -1,43 +1,43 @@
-<header class="panel-cover {% if page.layout == 'post' or page.layout == 'page' %}panel-cover--collapsed{% endif %}" style="background-image: url('/assets/images/background-cover.jpg')">
-  <div class="panel-main">
+<header class="site-header">
+  <nav class="site-nav" aria-label="主导航">
+    <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="返回首页">
+      <span class="site-brand__mark">Z</span>
+      <span>{{ site.title }}</span>
+    </a>
 
-    <div class="panel-main__inner panel-inverted">
-    <div class="panel-main__content">
+    <div class="site-nav__links">
+      <a href="{{ '/' | relative_url }}">首页</a>
+      <a href="{{ '/#blog' | relative_url }}">文章</a>
+      {% for item in site.nav %}
+        <a href="{{ item.url }}">{{ item.title }}</a>
+      {% endfor %}
+    </div>
+  </nav>
 
-        <a href="/#blog" title="前往 {{ site.title }} 的主页" class="blog-button"><img src="/assets/images/avatar.jpg" width="80" alt="{{ site.title }} logo" class="panel-cover__logo logo" /></a>
-        <h1 class="panel-cover__title panel-title"><a href="/#blog" title="link to homepage for {{ site.title }}" class="blog-button">{{ site.title }}</a></h1>
-        {% if site.subtitle %}
-        <span class="panel-cover__subtitle panel-subtitle">{{site.subtitle}}</span>
-        {% endif %}
-        <hr class="panel-cover__divider" />
-        <p class="panel-cover__description">{{ site.description }}</p>
-        <hr class="panel-cover__divider panel-cover__divider--secondary" />
-        
-        {% if site.welcome_message %}
-        <p class="panel-cover__description">{{ site.welcome_message }}</p>
-        {% endif %}
-        
-        <div class="navigation-wrapper">
-          <div>
-            <nav class="cover-navigation cover-navigation--primary">
-              <ul class="navigation">
-                <li class="navigation__item"><a href="/#blog" title="{{site.blog_button.description}}" class="blog-button">{{site.blog_button.title}}</a></li>
-                {% for item in site.nav %}
-                  <li class="navigation__item"><a href="{{item.url}}" target="_blank" title="{{item.description}}">{{item.title}}</a></li>
-                {% endfor %}
-              </ul>
-            </nav>
-          </div>
-          
-          <div>{% include social.html %}</div>
-        </div>
+  <section class="hero" aria-label="博客介绍">
+    <div class="hero__media" aria-hidden="true">
+      <img src="{{ '/assets/images/background-cover.jpg' | relative_url }}" alt="">
+    </div>
+
+    <div class="hero__content">
+      <p class="eyebrow">Personal Blog</p>
+      <h1>{{ site.title }}</h1>
+      {% if site.subtitle %}
+        <p class="hero__subtitle">{{ site.subtitle }}</p>
+      {% endif %}
+      <p class="hero__description">{{ site.description }}</p>
+      <div class="hero__actions">
+        <a class="button button--primary" href="#blog">阅读文章</a>
+        <a class="button button--ghost" href="{{ site.social.github }}">GitHub</a>
       </div>
     </div>
-    
-    {% if site.cover_color %}
-    <div class="panel-cover--overlay cover-{{site.cover_color}}"></div>
-    {% else %}
-    <div class="panel-cover--overlay cover-disabled"></div>
-    {% endif %}
-  </div>
+
+    <aside class="profile-card" aria-label="作者信息">
+      <img class="profile-card__avatar" src="{{ '/assets/images/avatar.jpg' | relative_url }}" alt="{{ site.title }} avatar">
+      <div>
+        <p class="profile-card__label">Created by</p>
+        <p class="profile-card__name">{{ site.author | default: site.title }}</p>
+      </div>
+    </aside>
+  </section>
 </header>
